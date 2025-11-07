@@ -66,7 +66,7 @@ export function getPreferences(): Preferences {
  * Note: Preferences are managed through Raycast's UI, not programmatically
  * This function is kept for API compatibility but doesn't actually modify preferences
  */
-export async function setExportFilePath(filePath: string): Promise<void> {
+export async function setExportFilePath(_filePath: string): Promise<void> {
   // Preferences can only be set through Raycast's preferences UI
   // Users should set the export file path in Raycast Preferences → Extensions → NordPass
   console.log("Note: Export file path should be set in Raycast Preferences UI");
